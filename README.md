@@ -1,10 +1,10 @@
-#Randomly generated 3 x 300 patient data
+# Randomly generated 3 x 300 patient data
 
 For testing purposes 3 x 300 clinical metadata, pipeline metadata and corresponding variants have been generated.
 
 Check releases for data files!
 
-##Building
+## Building
 To build, you must have `wheel` installed. If you do not have it installed, run the following:
 
 `pip install wheel`
@@ -16,7 +16,7 @@ Once you have installed `wheel`, run the following at the root level of this rep
 After this command has successfully run, a directory called `dist` should exist. Within this directory 
 there should be a `.whl` file and a `.tar.gz` file.
 
-##Installing
+## Installing
 To install, you must have `wheel` installed. If you do not have it installed, run the following:
 
 `pip install wheel`
@@ -27,7 +27,7 @@ Once you have installed `wheel`, go into the `dist` directory and run the follow
 
 After this command has successfully run, it should be installed and ready to run.
 
-##Running
+## Running
 To run, run the following:
 
 `generate_sample_data`
