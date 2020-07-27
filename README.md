@@ -17,13 +17,25 @@ After this command has successfully run, a directory called `dist` should exist.
 there should be a `.whl` file and a `.tar.gz` file.
 
 ## Installing
-To install, you must have `wheel` installed. If you do not have it installed, run the following:
+To install, you have two options available:
+1. Install from a built distribution
+2. Install from source code
+
+### Installing From a Built Distribution
+To install a built distribution, you must have `wheel` installed. If you do not have it installed, run the following:
 
 `pip install wheel`
 
 Once you have installed `wheel`, go into the `dist` directory and run the following to install:
 
 `pip install sample_data_generator-0.0.0-py3-none-any.whl`
+
+After this command has successfully run, it should be installed and ready to run.
+
+### Installing From Source Code
+To install, run the following at the root level of this repository:
+
+`pip install .`
 
 After this command has successfully run, it should be installed and ready to run.
 
@@ -63,3 +75,5 @@ Examples:
 ```
 
 You can now run the program with the specified command line parameters.
+
+## Development
