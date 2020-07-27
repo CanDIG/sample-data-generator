@@ -40,23 +40,6 @@ To install, run the following at the root level of this repository:
 After this command has successfully run, it should be installed and ready to run.
 
 ## Running
-To run, run the following:
-
-`generate_sample_data`
-
-This should output:
-
-```
-Usage:
-  generate_sample_data <number_of_files> <output_folder> <filename_start>
-```
-
-To get information on the command line parameters, run the following:
-
-`generate_sample_data -h`
-
-This should output:
-
 ```
 Generate random vcf files based on resampled dbSNP data
 
@@ -73,7 +56,5 @@ Options:
 Examples:                                                                                                                 
   generate_sample_data 5000 tmp/variants/ patient_
 ```
-
-You can now run the program with the specified command line parameters.
 
 ## Development
