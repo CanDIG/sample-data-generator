@@ -58,3 +58,14 @@ Examples:
 ```
 
 ## Development
+Create a virtual environment:
+
+`python3 -m venv venv`
+
+Activate the virtual environment:
+
+`source venv/bin/activate`
+
+Go to the root level of this repository and install it in editable mode:
+
+`pip install -e .`
