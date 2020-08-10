@@ -4,7 +4,7 @@
 Generate random vcf files based on resampled dbSNP data
 
 Usage:
-  generate_vcf.py <number_of_files> <output_folder> <filename_start>
+  generate_sample_data <number_of_files> <output_folder> <filename_start>
 
 Options:
   -h --help          Show this screen
@@ -14,7 +14,7 @@ Options:
                      a number.
 
 Examples:
-  generate_vcf.py 5000 tmp/variants/ patient_
+  generate_sample_data 5000 tmp/variants/ patient_
 """
 
 import os
