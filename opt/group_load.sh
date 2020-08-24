@@ -16,25 +16,25 @@ fi
 source "$1"
 
 list_idx=0
-for i in {00001..00300}
+for vcf_filename_idx in {00001..00300}
     do
         candig_repo add-variantset -r \
-            -I "${GROUP}"/"${GROUP}"_${i}.vcf.gz.tbi \
+            -I "${GROUP}"/"${GROUP}"_${vcf_filename_idx}.vcf.gz.tbi \
             -n "${PATIENT_SAMPLE_LIST[$list_idx]}" \
             -R "${REFERENCE_SET_NAME}" \
             "${REGISTRY_PATH}" \
             "${DATASET_NAME}" \
             "${PATIENT_LIST[$list_idx]}" \
             "${PATIENT_SAMPLE_LIST[$list_idx]}" \
-            "${GROUP}"/"${GROUP}"_${i}.vcf.gz
+            "${GROUP}"/"${GROUP}"_${vcf_filename_idx}.vcf.gz
         echo candig_repo add-variantset -r \
-            -I "${GROUP}"/"${GROUP}"_${i}.vcf.gz.tbi \
+            -I "${GROUP}"/"${GROUP}"_${vcf_filename_idx}.vcf.gz.tbi \
             -n "${PATIENT_SAMPLE_LIST[$list_idx]}" \
             -R "${REFERENCE_SET_NAME}" \
             "${REGISTRY_PATH}" \
             "${DATASET_NAME}" \
             "${PATIENT_LIST[$list_idx]}" \
             "${PATIENT_SAMPLE_LIST[$list_idx]}" \
-            "${GROUP}"/"${GROUP}"_${i}.vcf.gz
+            "${GROUP}"/"${GROUP}"_${vcf_filename_idx}.vcf.gz
         list_idx=$((list_idx+1))
     done
